@@ -9,7 +9,7 @@ Scrape TikTok user info by username.
   \____| |_|  \__,_|   \_/\_/   |_|\_\
 ```
 
-## Usage
+## Install
 
 To use the Clawk script, follow these steps:
 
@@ -36,27 +36,25 @@ To use the Clawk script, follow these steps:
     ./clawk.sh
     ```
 
-6. Scrape the user info:
+## Usage
 
    ```
-   ./clawk.sh -u <username>
+   Usage:  /clawk.sh -u <username>
    ```
-   ###### Exmaple
-   ```
-   ./clawk.sh -u haithamaouati
-   ```
-   ###### Help
-   ```
-   ./clawk.sh -h
-   ```
+
+##### Options:
+
+`-u`, `--username`   TikTok username (without @)
+
+`-h`, `--help`       Show this help message
 
 ## Dependencies
 
 The script requires the following dependencies:
 
-- [figlet](): Program for making large letters out of ordinary text
-- [curl](https://curl.se/): Command line tool for transferring data with URL syntax
-- [jq](https://stedolan.github.io/jq/): Command-line JSON processor
+- [figlet](): `pkg install figlet - y`
+- [curl](https://curl.se/): `pkg install curl - y`
+- [jq](https://stedolan.github.io/jq/): `pkg install jq`
 
 Make sure to install these dependencies before running the script.
 
