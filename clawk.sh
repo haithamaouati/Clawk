@@ -7,25 +7,31 @@
 normal="\e[0m"
 bold="\e[1m"
 faint="\e[2m"
-italics="\e[3m"
 underlined="\e[4m"
+error_color="\e[1;31m"
 
-# Check dependencies
-if ! command -v figlet &>/dev/null || ! command -v curl &>/dev/null || ! command -v jq &>/dev/null; then
-    echo -e "Error: figlet, curl and jq are required but not installed. Please install them and try again."
-    exit 1
-fi
+# Dependencies check
+dependencies=(figlet curl jq)
+for cmd in "${dependencies[@]}"; do
+    if ! command -v "$cmd" &>/dev/null; then
+        echo -e "${error_color}Error:${normal} '$cmd' is required but not installed. Please install it and try again." >&2
+        exit 1
+    fi
+done
+
+# Clear the screen
+clear
 
 print_banner() {
-    clear
     figlet -f standard "Clawk"
     echo -e "Scrape TikTok info by username\n"
     echo -e " Author: Haitham Aouati"
     echo -e " GitHub: ${underlined}github.com/haithamaouati${normal}\n"
 }
 
+print_banner
+
 print_help() {
-    print_banner
     echo -e "Usage: $0 -u <username>\n"
     echo "Options:"
     echo "  -u, --username   TikTok username (without @)"
@@ -45,7 +51,6 @@ while [[ "$#" -gt 0 ]]; do
             print_help
             ;;
         *)
-            print_banner
             echo "Unknown option: $1"
             print_help
             ;;
@@ -53,12 +58,10 @@ while [[ "$#" -gt 0 ]]; do
 done
 
 if [[ -z "$username" ]]; then
-    print_banner
     echo "Error: Username not provided."
     print_help
 fi
 
-print_banner
 echo -e "Scraping TikTok info for @$username\n"
 
 # Construct the URL
