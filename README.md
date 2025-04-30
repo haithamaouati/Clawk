@@ -1,13 +1,7 @@
 # Clawk
 Scrape TikTok user info by username.
 
-```
-   ____   _                      _    
-  / ___| | |   __ _  __      __ | | __
- | |     | |  / _` | \ \ /\ / / | |/ /
- | |___  | | | (_| |  \ V  V /  |   < 
-  \____| |_|  \__,_|   \_/\_/   |_|\_\
-```
+![preview](preview.png)
 
 ## Install
 
@@ -47,6 +41,9 @@ To use the Clawk script, follow these steps:
 `-u`, `--username`   TikTok username (without @)
 
 `-h`, `--help`       Show this help message
+
+## Screenshot
+![screenshot](screenshot.png)
 
 ## Dependencies
 
