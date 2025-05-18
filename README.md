@@ -62,4 +62,4 @@ Made with :coffee: by **Haitham Aouati**
 
 ## License
 
-Clawk is licensed under [MIT License](LICENSE).
+Clawk is licensed under [WTFPL license](LICENSE).
