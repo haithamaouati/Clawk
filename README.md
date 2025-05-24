@@ -38,6 +38,8 @@ Usage: `./clawk.sh -u <username>`
 
 `-u`, `--username`   TikTok username (without @)
 
+`-o`, `--output`     Save output as JSON file (optional). If no filename is provided, defaults to `<username>.json`
+
 `-h`, `--help`       Show this help message
 
 ## Screenshot
