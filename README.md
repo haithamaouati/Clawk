@@ -46,7 +46,6 @@ Usage: `./clawk.sh -u <username>`
 
 The script requires the following dependencies:
 
-- **figlet**: `pkg install figlet - y`
 - **curl**: `pkg install curl - y`
 - **jq**: `pkg install jq`
 
