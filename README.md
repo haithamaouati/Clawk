@@ -42,9 +42,6 @@ Usage: `./clawk.sh -u <username>`
 
 `-h`, `--help`       Show this help message
 
-## Screenshot
-![screenshot](screenshot.png)
-
 ## Dependencies
 
 The script requires the following dependencies:
