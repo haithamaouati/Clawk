@@ -47,9 +47,12 @@ Usage: `./clawk.sh -u <username>`
 The script requires the following dependencies:
 
 - **curl**: `pkg install curl - y`
-- **jq**: `pkg install jq`
+- **jq**: `pkg install jq -y`
 
 Make sure to install these dependencies before running the script.
+
+## Environment
+- Tested on [Termux](https://termux.dev/en/)
 
 ## Disclaimer
 > [!WARNING]
