@@ -63,7 +63,13 @@ The script requires the following dependencies:
 - **curl**: `pkg install curl - y`
 - **jq**: `pkg install jq -y`
 
-Make sure to install these dependencies before running the script.
+> [!IMPORTANT]  
+> Make sure to install these **dependencies** before running the script.
+
+> [!NOTE]  
+> Ensure that the TikTok user account is public to access their information.
+
+> The scraping technique relies on the current structure of the TikTok website, which may change.
 
 ## Environment
 - Tested on [Termux](https://termux.dev/en/)
