@@ -3,8 +3,6 @@
 # Author: Haitham Aouati
 # GitHub: github.com/haithamaouati
 
-set -euo pipefail
-
 # Colors
 nc="\e[0m"
 bold="\e[1m"
