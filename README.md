@@ -25,7 +25,7 @@ This bash script allows you to fetch detailed information about TikTok users by 
   - Profile picture URL
 - Downloads the profile picture to your local machine.
 
-![preview]()
+![preview](preview.png)
 
 ## Install
 
