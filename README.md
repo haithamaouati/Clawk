@@ -1,5 +1,29 @@
 # Clawk
-Scrape TikTok user info by username.
+This bash script allows you to fetch detailed information about TikTok users by their username or user ID, without requiring logins or API keys. It extracts various user data such as follower counts, video counts, likes, and more.
+
+## Features
+
+- Fetch user information by TikTok username or user ID.
+- Works without logins and without using APIs.
+- Extracts:
+  - User ID
+  - Unique ID
+  - Nickname
+  - Follower count
+  - Following count
+  - Likes count
+  - Video count
+  - Biography (signature)
+  - Verified status
+  - SecUid
+  - Comment settings
+  - Private account status
+  - Region
+  - Heart count
+  - Digg count
+  - Friend count
+  - Profile picture URL
+- Downloads the profile picture to your local machine.
 
 ![preview](preview.png)
 
@@ -29,18 +53,8 @@ To use the Clawk script, follow these steps:
     ```
     ./clawk.sh
     ```
-
-## Usage
-
-Usage: `./clawk.sh -u <username>`
-
-##### Options:
-
-`-u`, `--username`   TikTok username (without @)
-
-`-o`, `--output`     Save output as JSON file (optional). If no filename is provided, defaults to `<username>.json`
-
-`-h`, `--help`       Show this help message
+Usage
+Usage: `./clawk.sh <@username>` or `[username]`
 
 ## Dependencies
 
