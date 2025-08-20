@@ -87,18 +87,15 @@ else
     language="Not Found"
 fi
 
-# Robust region detection: grab all "region" codes and find the first valid one
-region="Not Found"
-region_codes=($(echo "$source_code" | grep -o '"region":"[^"]*"' | sed 's/"region":"//;s/"//'))
-for code in "${region_codes[@]}"; do
-    if [[ -f countries.json ]]; then
-        country_name=$(jq -r --arg region "$code" '.[] | select(.code == $region) | .name' countries.json)
-        if [[ -n "$country_name" && "$country_name" != "null" ]]; then
-            region="$country_name"
-            break
-        fi
-    fi
-done
+# Resolve region
+region_code=$(echo "$source_code" | grep -oP '"ttSeller":false,"region":"\K[^"]+')
+
+if [[ -n "$region_code" && -f countries.json ]]; then
+    country_name=$(jq -r --arg region "$region_code" '.[] | select(.code == $region) | .name')
+    region="${country_name:-Unknown (Code: $region_code)}"
+else
+    region="Not region found"
+fi
 
 # Output
 if [[ -n $id ]]; then
