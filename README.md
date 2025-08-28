@@ -75,6 +75,9 @@ The script requires the following dependencies:
 - Tested on [Termux](https://termux.dev/en/)
 
 ## Disclaimer
+>[!CAUTION]
+>This Tool is only for educational purposes
+
 > [!WARNING]
 > We are not responsible for any misuse or damage caused by this program. use this tool at your own risk!
 
