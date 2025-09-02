@@ -18,7 +18,7 @@ This bash script allows you to fetch detailed information about TikTok users by 
   - SecUid
   - Comment settings
   - Private account status
-  - Region
+  - ~Region~
   - Heart count
   - Digg count
   - Friend count
@@ -69,6 +69,7 @@ The script requires the following dependencies:
 > [!NOTE]  
 > Ensure that the TikTok user account is public to access their information.
 
+> [!TIP]
 > The scraping technique relies on the current structure of the TikTok website, which may change.
 
 ## Environment
