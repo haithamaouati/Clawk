@@ -92,7 +92,7 @@ if [[ -n "$region_code" && -f countries.json ]]; then
     country_name=$(jq -r --arg region "$region_code" '.[] | select(.code == $region) | .name')
     region="${country_name:-Unknown (Code: $region_code)}"
 else
-    region="Not region found"
+    region="Region not found"
 fi
 
 # Output
@@ -117,15 +117,6 @@ if [[ -n $id ]]; then
     echo "Biography:"
     echo -e "$signature"
     echo
-    echo "TikTok Profile: https://www.tiktok.com/@$uniqueId"
+    echo "TikTok Profile: $avatarLarger"
     echo
-
-    # Download avatar
-    if [[ -n "$avatarLarger" ]]; then
-        filename="${uniqueId}_profile_pic.jpg"
-        curl -sL "$avatarLarger" -o "$filename" && echo "Profile picture downloaded as $filename"
-    fi
-else
-    echo "Failed to fetch account details. TikTok might block the request or username doesn't exist."
-    exit 1
 fi
