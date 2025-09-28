@@ -27,7 +27,7 @@ echo -e "    /\\___/\\"
 echo -e "    )     ("
 echo -e "   =\     /="
 echo -e "     )   ("
-echo -e "    /     \\   ${bold_green}$0${nc}${bold_yellow} v3.0${nc}${bold}"
+echo -e "    /     \\   ${bold_green}$0${nc}${bold_yellow} v3.1${nc}${bold}"
 echo -e "    )     (   ${nc}Scrape TikTok info by username.${bold}"
 echo -e "   /       \\  ${nc}Author: Haitham Aouati${bold}"
 echo -e "   \       /  ${nc}GitHub: ${underline}github.com/haithamaouati${nc}${bold}"
@@ -76,6 +76,22 @@ followingCount=$(extract '"followingCount":[^,]*' 's/"followingCount"://')
 heartCount=$(extract '"heartCount":[^,]*' 's/"heartCount"://')
 videoCount=$(extract '"videoCount":[^,]*' 's/"videoCount"://')
 friendCount=$(extract '"friendCount":[^,}]*' 's/"friendCount"://')  # fix trailing }
+createTime=$(extract '"createTime":\d+' 's/"createTime"://')
+uniqueIdModifyTime=$(extract '"uniqueIdModifyTime":\d+' 's/"uniqueIdModifyTime"://')
+nickNameModifyTime=$(extract '"nickNameModifyTime":\d+' 's/"nickNameModifyTime"://')
+
+# Convert Unix timestamps to human-readable
+to_date() {
+    if [[ -n "$1" && "$1" =~ ^[0-9]+$ ]]; then
+        date -d @"$1" +"%Y-%m-%d %H:%M:%S" 2>/dev/null || echo "$1"
+    else
+        echo "N/A"
+    fi
+}
+
+createTime_human=$(to_date "$createTime")
+uniqueIdModifyTime_human=$(to_date "$uniqueIdModifyTime")
+nickNameModifyTime_human=$(to_date "$nickNameModifyTime")
 
 # Resolve language
 if [[ -n ${language_code:-} && -f languages.json ]]; then
@@ -117,6 +133,8 @@ if [[ -n $id ]]; then
     echo "Biography:"
     echo -e "$signature"
     echo
-    echo "TikTok Profile: $avatarLarger"
+    echo "Account Created: $createTime_human"
+    echo "Last Username Change: $uniqueIdModifyTime_human"
+    echo "Last Nickname Change: $nickNameModifyTime_human"
     echo
 fi
