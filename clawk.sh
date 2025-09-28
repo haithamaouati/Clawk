@@ -98,7 +98,7 @@ if [[ -n ${language_code:-} && -f languages.json ]]; then
     language_name=$(jq -r --arg lang "$language_code" '.[] | select(.code == $lang) | .name' languages.json)
     language="${language_name:-Unknown (Code: $language_code)}"
 else
-    language="Not Found"
+    language="N/A"
 fi
 
 # Resolve region
@@ -108,7 +108,7 @@ if [[ -n "$region_code" && -f countries.json ]]; then
     country_name=$(jq -r --arg region "$region_code" '.[] | select(.code == $region) | .name')
     region="${country_name:-Unknown (Code: $region_code)}"
 else
-    region="Region not found"
+    region="N/A"
 fi
 
 # Output
