@@ -137,4 +137,7 @@ if [[ -n $id ]]; then
     echo "Last Username Change: $uniqueIdModifyTime_human"
     echo "Last Nickname Change: $nickNameModifyTime_human"
     echo
+else
+    echo "Failed to fetch account details. TikTok might block the request or username doesn't exist."
+    exit 1
 fi
