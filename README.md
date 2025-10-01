@@ -1,9 +1,11 @@
 # Clawk
-This bash script allows you to fetch detailed information about TikTok users by their username or user ID, without requiring logins or API keys. It extracts various user data such as follower counts, video counts, likes, and more.
+This bash script allows you to fetch detailed information about TikTok users by their `username`, without requiring logins or API keys. It extracts various user data such as follower counts, video counts, likes, and more.
+
+![preview](preview.png)
 
 ## Features
 
-- Fetch user information by TikTok username or user ID.
+- Fetch user information by TikTok `username`.
 - Works without logins and without using APIs.
 - Extracts:
   - User ID
@@ -22,10 +24,10 @@ This bash script allows you to fetch detailed information about TikTok users by 
   - Heart count
   - Digg count
   - Friend count
-  - Profile picture URL
-- Downloads the profile picture to your local machine.
-
-![preview](preview.png)
+  - Account Created
+  - Last Username Change
+  - Last Nickname Change
+  - TikTok Profile URL
 
 ## Install
 
@@ -53,11 +55,11 @@ To use the Clawk script, follow these steps:
     ```
     ./clawk.sh
     ```
-Usage
+## Usage
+
 Usage: `./clawk.sh <@username>` or `[username]`
 
 ## Dependencies
-
 The script requires the following dependencies:
 
 - **curl**: `pkg install curl - y`
