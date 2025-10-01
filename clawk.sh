@@ -27,7 +27,7 @@ echo -e "    /\\___/\\"
 echo -e "    )     ("
 echo -e "   =\     /="
 echo -e "     )   ("
-echo -e "    /     \\   ${bold_green}$0${nc}${bold_yellow} v3.1${nc}${bold}"
+echo -e "    /     \\   ${bold_green}$0${nc}${bold_yellow} v3.5${nc}${bold}"
 echo -e "    )     (   ${nc}Scrape TikTok info by username.${bold}"
 echo -e "   /       \\  ${nc}Author: Haitham Aouati${bold}"
 echo -e "   \       /  ${nc}GitHub: ${underline}github.com/haithamaouati${nc}${bold}"
@@ -137,6 +137,7 @@ if [[ -n $id ]]; then
     echo "Last Username Change: $uniqueIdModifyTime_human"
     echo "Last Nickname Change: $nickNameModifyTime_human"
     echo
+    echo -e "TikTok profile: ${underline}https://vm.tiktok.com/$uniqueId${nc}\n"
 else
     echo "Failed to fetch account details. TikTok might block the request or username doesn't exist."
     exit 1
