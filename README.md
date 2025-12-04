@@ -20,7 +20,7 @@ This bash script allows you to fetch detailed information about TikTok users by 
   - SecUid
   - Comment settings
   - Private account status
-  - ~Region~
+  - ~Region~ (**Help me fix it!**)
   - Heart count
   - Digg count
   - Friend count
