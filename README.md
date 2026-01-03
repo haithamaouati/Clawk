@@ -1,3 +1,6 @@
+<p align="center">
+  <img width="125" height="125" src="logo.gif">
+
 # Clawk
 This bash script allows you to fetch detailed information about TikTok users by their `username`, without requiring logins or API keys. It extracts various user data such as follower counts, video counts, likes, and more.
 
