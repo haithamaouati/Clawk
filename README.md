@@ -84,6 +84,18 @@ The script requires the following dependencies:
 > [!WARNING]
 > We are not responsible for any misuse or damage caused by this program. use this tool at your own risk!
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=haithamaouati/Clawk&type=date&legend=top-left)](https://www.star-history.com/#haithamaouati/Clawk&type=date&legend=top-left)
+
+### Find this repository useful? ❤️
+Support it by joining the [stargazers](https://github.com/haithamaouati/Clawk/stargazers). ⭐
+
+If you want to help even more, please spread the word — share the project on X, Reddit, or with your community so more people discover it.
+
+And [follow me](https://github.com/haithamaouati) to keep up with future updates and projects. 🤩
+
+
 ## License
 
 Clawk is licensed under [WTFPL license](LICENSE).
