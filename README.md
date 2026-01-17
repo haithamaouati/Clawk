@@ -27,10 +27,10 @@ This bash script allows you to fetch detailed information about TikTok users by 
   - Heart count
   - Digg count
   - Friend count
-  - Account Created
-  - Last Username Change
-  - Last Nickname Change
-  - TikTok Profile URL
+  - Account created
+  - Last username change
+  - Last nickname change
+  - TikTok profile URL
 
 ## Install
 
@@ -91,7 +91,7 @@ The script requires the following dependencies:
 
 [![Star History Chart](https://api.star-history.com/svg?repos=haithamaouati/Clawk&type=date&legend=top-left)](https://www.star-history.com/#haithamaouati/Clawk&type=date&legend=top-left)
 
-### Find this repository useful? ❤️
+#### Find this repository useful? ♥️
 Support it by joining the [stargazers](https://github.com/haithamaouati/Clawk/stargazers). ⭐
 
 If you want to help even more, please spread the word — share the project on X, Reddit, or with your community so more people discover it.
