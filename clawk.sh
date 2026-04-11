@@ -139,6 +139,7 @@ if [[ -n $id ]]; then
     echo
     echo -e "TikTok profile: ${underline}https://tiktok.com/@$uniqueId${nc}\n"
 else
-    echo "Failed to fetch account details. TikTok might block the request or username doesn't exist."
+    echo -e "\nFailed to fetch account details. TikTok might block the request or username doesn't exist.\n"
+    echo -e "Try webapp: ${underline}haithamaouati.github.io/clawkscraper$nc\n"
     exit 1
 fi
