@@ -1,5 +1,5 @@
 # Clawk
-This bash script allows you to fetch detailed information about TikTok users by their `username`, without requiring logins or API keys. It extracts various user data such as follower counts, video counts, likes, and more.
+**Clawk** is an OSINT (Open Source Intelligence) tool designed to fetch detailed profile data from TikTok without using an official API or requiring user authentication. It targets the "no-login" barrier effectively, making it very useful for researchers or developers.
 
 <p align="center">
   <img width="125" height="125" src="logo.gif">
