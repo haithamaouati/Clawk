@@ -23,7 +23,7 @@
   - SecUid
   - Comment settings
   - Private account status
-  - *~Region~* (Try web version: [Clawk](https://haithamaouati.github.io/clawkscraper/))
+  - *~Region~* (Try web version: [TikToker](//haithamaouati.github.io/TikToker/)
   - Heart count
   - Digg count
   - Friend count
