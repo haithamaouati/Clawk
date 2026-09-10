@@ -23,7 +23,7 @@
   - SecUid
   - Comment settings
   - Private account status
-  - *~Region~* (Try web version: [TikToker](//haithamaouati.github.io/TikToker/)
+  - *~Region~*
   - Heart count
   - Digg count
   - Friend count
